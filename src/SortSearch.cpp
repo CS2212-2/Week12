@@ -66,6 +66,23 @@ std::vector<int> SortSearch::boubleSort(vector<int> arr){
 	return arr;
 }
 
+std::vector<int> SortSearch::selectionSort(vector<int> arr){
+	int size = arr.size();
+	int start, minIndex, minValue;
+	for(start=0;start<size-1;start++){
+		minIndex=start;
+		minValue=arr[start];
+		for(int index=start+1;index<size;index++){
+			if(arr[index]<minValue){
+			minValue=arr[index];
+			minIndex=index;
+		}
+		}
+		arr[minIndex]=arr[start];
+			arr[start]=minValue;
+	}
+	return arr;
+}
 void SortSearch::showArray(vector<int> arr){
 	int size = arr.size();
 	for(int count=0; count<size;count++){

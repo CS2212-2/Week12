@@ -20,6 +20,7 @@ class SortSearch
 	int linearSearch(int[], int);
 	int binarySearch(int[], int );
 	std::vector<int> boubleSort(vector<int>);
+	std::vector<int> selectionSort(vector<int>);
 	void showArray(vector<int>);
 
 

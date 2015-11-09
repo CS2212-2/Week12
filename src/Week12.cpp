@@ -33,7 +33,8 @@ int main() {
          }
          cout << "The unsorted array : \n" ;
          s1.showArray(sortArray);
-         vector<int> sorted=s1.boubleSort(sortArray);
+     //    vector<int> sorted=s1.boubleSort(sortArray);
+         vector<int> sorted=s1.selectionSort(sortArray);
          cout << "The sorted array : \n" ;
                  s1.showArray(sorted);
 
