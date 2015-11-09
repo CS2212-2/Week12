@@ -30,3 +30,21 @@ index++;
 }
 return position;
 }
+
+int SortSearch::binarySearch(int arr[], int element){
+	int size = sizeof(arr);
+	int first=0, last= size-1, middle, position=-1;
+	bool found=false;
+	while(!found && first <=last){
+		middle=(first+last)/2;
+	  if(arr[middle]==element){
+		  found=true;
+		  position=middle;
+	  }
+	  else if(arr[middle] > element)
+		  last=middle-1;
+	  else
+		  first=middle+1;
+	}
+	return position;
+}

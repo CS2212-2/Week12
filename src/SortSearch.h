@@ -17,7 +17,7 @@ class SortSearch
 
 	SortSearch();
 	int search1(int[], int);
-
+	int binarySearch(int[], int );
 
 
 };

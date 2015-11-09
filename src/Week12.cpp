@@ -22,7 +22,8 @@ int main() {
 	     // Get Input Value
 	     cout<<"Enter the Number :";
 	     cin>>n;
-         result = s1.search1(searchArray,n);
+        // result = s1.search1(searchArray,n);
+         result=s1.binarySearch(searchArray,n);
          if(result>0){
          cout<<"Value exists in the array";
          }
