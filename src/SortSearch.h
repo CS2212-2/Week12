@@ -16,7 +16,7 @@ class SortSearch
 	public:
 
 	SortSearch();
-	int search1(int[], int);
+	int linearSearch(int[], int);
 	int binarySearch(int[], int );
 
 

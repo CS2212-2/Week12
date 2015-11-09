@@ -15,7 +15,7 @@ using namespace std;
 
 SortSearch::SortSearch(){}
 
-int SortSearch::search1(int arr[], int element){
+int SortSearch::linearSearch(int arr[], int element){
 int size = sizeof(arr);
 int index=0;
 int position=-1;
