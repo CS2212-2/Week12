@@ -48,3 +48,29 @@ int SortSearch::binarySearch(int arr[], int element){
 	}
 	return position;
 }
+
+std::vector<int> SortSearch::boubleSort(vector<int> arr){
+	int size = arr.size();
+	int swap,temp=0;
+	do{
+	swap=0;
+	for(int count=0; count<size-1;count++){
+		if(arr[count]> arr[count+1]){
+			temp=arr[count];
+			arr[count]=arr[count+1];
+			arr[count+1]=temp;
+			swap=1;
+		}
+	}
+	}while(swap!=0);
+	return arr;
+}
+
+void SortSearch::showArray(vector<int> arr){
+	int size = arr.size();
+	for(int count=0; count<size;count++){
+		cout << arr[count] << " ";
+	}
+	cout << endl;
+
+}

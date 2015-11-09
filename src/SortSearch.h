@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <math.h>
+#include<vector>
 
 
 using namespace std;
@@ -18,6 +19,8 @@ class SortSearch
 	SortSearch();
 	int linearSearch(int[], int);
 	int binarySearch(int[], int );
+	std::vector<int> boubleSort(vector<int>);
+	void showArray(vector<int>);
 
 
 };

@@ -13,7 +13,8 @@
 using namespace std;
 
 int main() {
-	    int searchArray[6]={34,23,56,77,88,99};
+	    int searchArray[6]={34,23,5,17,8,29};
+	    vector<int> sortArray (searchArray, searchArray+ sizeof(searchArray)	/sizeof(searchArray[0]));
 	    int result;
 
 	      SortSearch s1;
@@ -23,13 +24,19 @@ int main() {
 	     cout<<"Enter the Number :";
 	     cin>>n;
         // result = s1.search1(searchArray,n);
-         result=s1.binarySearch(searchArray,n);
+         //result=s1.binarySearch(searchArray,n);
          if(result>0){
          cout<<"Value exists in the array";
          }
          else{
         	 cout<<"Value does not exist in the array";
          }
+         cout << "The unsorted array : \n" ;
+         s1.showArray(sortArray);
+         vector<int> sorted=s1.boubleSort(sortArray);
+         cout << "The sorted array : \n" ;
+                 s1.showArray(sorted);
+
 	     return 0;
 	 }
 
